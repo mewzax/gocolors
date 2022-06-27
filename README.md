@@ -15,4 +15,4 @@ import (
 
 func main() {
   fmt.Println(gocolors.Cyan("Hello World!"))
- }
+}
