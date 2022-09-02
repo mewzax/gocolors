@@ -79,10 +79,6 @@ const (
 	Reset = "\033[0m"
 )
 
-func ColorizeForeground(color, text string) string {
-	return color + text + Reset
-}
-
-func ColorizeBackground(color, text string) string {
+func Colorize(color, text string) string {
 	return color + text + Reset
 }
