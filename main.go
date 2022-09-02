@@ -10,10 +10,6 @@ func RGB(r, g, b int) string {
 	return fmt.Sprintf("\x1b[38;2;%d;%d;%dm", r, g, b)
 }
 
-func RGBA(r, g, b, a int) string {
-	return fmt.Sprintf("\x1b[38;2;%d;%d;%dm", r, g, b)
-}
-
 // Styles
 const (
 	Bold = "\033[1m"
