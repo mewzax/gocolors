@@ -1,11 +1,10 @@
 package gocolors
 
-package utils
-
 import (
 	"fmt"
 )
 
+// Get your color with RGB values
 func RGB(r, g, b int) string {
 	return fmt.Sprintf("\x1b[38;2;%d;%d;%dm", r, g, b)
 }
@@ -75,6 +74,7 @@ const (
 	Reset = "\033[0m"
 )
 
+// Add color to your text. You can use (gocolors.Cyan, "text") parameters for example
 func Colorize(color, text string) string {
 	return color + text + Reset
 }
