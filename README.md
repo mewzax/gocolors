@@ -11,4 +11,5 @@ import (
 
 func main() {
   fmt.Println(gocolors.Colorize(gocolors.Green, "Hello World!"))
+  fmt.Println(gocolors.Colorize(gocolor.RGB(66, 245, 233), "Custom RGB"))
 }
